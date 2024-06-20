@@ -30,3 +30,9 @@ export OPENAI_API_KEY="<YOUR_FIREWORKS_API_KEY>"
 ```
 
 Alternatively, you can pass an initialized `client` object to extraction functions.
+
+## Testing
+From the `publang` directory run `pytest` to run the current suite of unit test. If your API key is not valid, the test may execute very slowly. To avoid this set PL_RETRY_ATTEMPTS to 1.
+```
+export PL_RETRY_ATTEMPTS=1
+```
